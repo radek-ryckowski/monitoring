@@ -1,0 +1,36 @@
+{
+  "name": "@monitoring/cdk-auto-monitoring",
+  "version": "1.0.0",
+  "description": "AWS CDK L3 Construct for automatic CloudWatch monitoring across AWS services",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "test": "jest"
+  },
+  "keywords": [
+    "aws",
+    "cdk",
+    "cloudwatch",
+    "monitoring",
+    "automation",
+    "ecs",
+    "lambda",
+    "rds",
+    "dynamodb"
+  ],
+  "author": "",
+  "license": "MIT",
+  "peerDependencies": {
+    "aws-cdk-lib": "^2.215.0",
+    "constructs": "^10.0.0"
+  },
+  "dependencies": {
+    "@monitoring/cdk-cloudwatch-observability": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.7.9",
+    "typescript": "~5.6.3"
+  }
+}

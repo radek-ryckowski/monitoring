@@ -1,0 +1,16 @@
+{
+  "enabled": true,
+  "dashboardName": "BasicBillingDashboard",
+  "enableAnomalyDetection": true,
+  "enableForecasting": true,
+  "forecastDays": 30,
+  "budgets": [
+    {
+      "name": "MonthlyBudget",
+      "amount": 1000,
+      "timeUnit": "MONTHLY",
+      "thresholds": [80, 100],
+      "notificationEmails": ["team@example.com"]
+    }
+  ]
+}
