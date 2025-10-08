@@ -9,8 +9,10 @@
     "monitoring": "bin/monitoring.js"
   },
   "scripts": {
-    "build": "npm run build --workspaces && tsc",
-    "build:packages": "npm run build --workspaces",
+    "clean": "find . -name '*.js' -not -path '*/node_modules/*' -not -name 'jest.config.js' -delete && find . -name '*.d.ts' -not -path '*/node_modules/*' -delete && find . -name '*.js.map' -not -path '*/node_modules/*' -delete && rm -rf cdk.out .cdk.staging",
+    "build": "npm run build -w @monitoring/cdk-cloudwatch-observability && npm run build -w @monitoring/cdk-auto-monitoring && tsc",
+    "build:packages": "npm run build -w @monitoring/cdk-cloudwatch-observability && npm run build -w @monitoring/cdk-auto-monitoring",
+    "rebuild": "npm run clean && npm run build",
     "watch": "tsc -w",
     "test": "jest",
     "cdk": "cdk"

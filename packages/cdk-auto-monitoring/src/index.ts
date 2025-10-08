@@ -243,7 +243,7 @@ export interface AutoMonitoringProps {
   /**
    * Path to billing dashboard configuration JSON file
    * When provided, automatically creates billing dashboards with custom config
-   * @default - Creates default billing dashboard with $10 monthly budget
+   * @default - Creates default billing dashboard with $100 monthly budget
    */
   readonly billingConfigPath?: string;
 
