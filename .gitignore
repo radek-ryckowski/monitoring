@@ -14,4 +14,4 @@ bin/deploy-*.ts
 # Python script state
 .monitoring-state.json
 scripts/__pycache__/
-config/account.config
+config/accounts.config
