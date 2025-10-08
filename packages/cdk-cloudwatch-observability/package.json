@@ -1,0 +1,31 @@
+{
+  "name": "@monitoring/cdk-cloudwatch-observability",
+  "version": "1.0.0",
+  "description": "AWS CDK L3 Constructs for CloudWatch Observability (OAM) cross-account monitoring",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "test": "jest",
+    "clean": "rm -rf lib"
+  },
+  "keywords": [
+    "aws",
+    "cdk",
+    "cloudwatch",
+    "observability",
+    "oam",
+    "monitoring"
+  ],
+  "author": "",
+  "license": "MIT",
+  "peerDependencies": {
+    "aws-cdk-lib": "^2.215.0",
+    "constructs": "^10.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "22.7.9",
+    "typescript": "~5.6.3"
+  }
+}

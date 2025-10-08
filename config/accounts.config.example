@@ -1,0 +1,16 @@
+[monitoring]
+account_id = 111111111111
+profile = monitoring
+region = aws-region
+
+[application]
+account_id = 22222222222
+profile = application
+region = aws-region
+
+[defaults]
+app_name = TestApp
+environment = dev
+
+# Optional: Uncomment to enable alarms
+# alarm_topic_arn = arn:aws:sns:aws-region:111111111111:monitoring-alerts
