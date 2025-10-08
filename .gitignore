@@ -1,0 +1,17 @@
+*.js
+!jest.config.js
+*.d.ts
+node_modules
+
+# CDK asset staging directory
+.cdk.staging
+cdk.out
+cdk.context.json
+
+# Generated deployment binaries (created by test_scenarios.py)
+bin/deploy-*.ts
+
+# Python script state
+.monitoring-state.json
+scripts/__pycache__/
+config/account.config
